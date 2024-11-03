@@ -14,7 +14,7 @@ Singular's flutter plugin project.
   s.dependency 'Flutter'
   s.platform = :ios, '12.0'
   s.ios.dependency 'Singular-SDK', '12.6.0'
-
+  spec.static_framework = false
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
 end
